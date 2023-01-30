@@ -11,7 +11,7 @@ class Program
         const int F_Grade = 0;
         // Get user letter input
         Console.WriteLine("Please input a letter grade:");
-        char gradeInput = Char.Parse(Console.ReadLine());
+        char gradeInput = Console.ReadLine();
         char gradeInputLower = Char.ToLower(gradeInput);
         switch (gradeInput)
         {
