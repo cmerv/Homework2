@@ -11,26 +11,26 @@ class Program
         const int F_Grade = 0;
         // Get user letter input
         Console.WriteLine("Please input a letter grade:");
-        char gradeInput = Console.ReadLine();
-        char gradeInputLower = Char.ToLower(gradeInput);
+        string gradeInput = Console.ReadLine();
+        string gradeInputLower = gradeInput.ToLower();
         switch (gradeInput)
         {
             default: // input validation.
             Console.WriteLine($"An invalid letter grade was input.");
             break;
-            case 'a': // if the letter entered is A, B, C, D, F then return the GPA number to console.
+            case "a": // if the letter entered is A, B, C, D, F then return the GPA number to console.
             Console.WriteLine($"The GPA is: {A_Grade}.");
             break;
-            case 'b':
+            case "b":
             Console.WriteLine($"The GPA is: {B_Grade}.");
             break; 
-            case 'c':
+            case "c":
             Console.WriteLine($"The GPA is: {C_Grade}.");
             break;
-            case 'd':
+            case "d":
             Console.WriteLine($"The GPA is: {D_Grade}.");
             break;
-            case 'f': 
+            case "f": 
             Console.WriteLine($"The GPA is: {F_Grade}.");
             break;
         }
