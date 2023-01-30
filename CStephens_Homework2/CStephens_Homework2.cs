@@ -52,8 +52,8 @@ class CStephens_Homework2_Program
             Console.WriteLine($"The GPA is: {F_Grade}.");
             break;
             default: // input error handling. if an invalid entry is provided, break from switch statemnet.
-            Console.WriteLine($"Wrong letter grade! Closing program.");
-            break;
+            Console.WriteLine($"Wrong letter grade! Try again.");
+            goto Part1;
         }
         // Part 2 code begins
         Part2:
