@@ -11,12 +11,12 @@ class CStephens_Homework2_Program
         const int F_Grade = 0;
         // Get user letter input
         Choose:
-        Console.WriteLine("Choose your program. You may type any of the following:\nGrade\nCompareNumbers\nLeapYear\nCancel");
+        Console.WriteLine("Choose your program. You may type any of the following:\nGradeScores\nCompareNumbers\nLeapYear\nCancel");
         string? programChoice = Console.ReadLine();
         switch (programChoice.ToLower()){ // allows user to start anywhere in the program they would like
             default:
             goto Choose; // force repeat of choice
-            case "grade":
+            case "gradescores":
             goto Part1; // begin part 1
             case "comparenumbers":
             goto Part2; // begin part 2
