@@ -11,8 +11,13 @@ class Program
         const int F_Grade = 0;
         // Get user letter input
         Console.WriteLine("Please input a letter grade:");
-        string gradeInput = Console.ReadLine();
-        string gradeInputLower = gradeInput.ToLower();
+        string? gradeInput = Console.ReadLine(); // "?" annotation to remove possible null reference error
+        string? gradeInputLower = null;
+        if (gradeInput is not null) // if statement to remove null reference warning 
+        {
+          gradeInputLower = gradeInput.ToLower();
+        }
+    
         switch (gradeInputLower)
         {
             default: // input validation.
