@@ -20,8 +20,8 @@ class Program
     
         switch (gradeInputLower)
         {
-            default: // input validation.
-            Console.WriteLine($"An invalid letter grade was input.");
+            default: // input error handling. if an invalid entry is provided, break from switch statemnet.
+            Console.WriteLine($"Wrong letter grade! Closing program.");
             break;
             case "a": // if the letter entered is A, B, C, D, F then return the GPA number to console.
             Console.WriteLine($"The GPA is: {A_Grade}.");
