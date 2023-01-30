@@ -13,7 +13,7 @@ class Program
         Console.WriteLine("Please input a letter grade:");
         string gradeInput = Console.ReadLine();
         string gradeInputLower = gradeInput.ToLower();
-        switch (gradeInput)
+        switch (gradeInputLower)
         {
             default: // input validation.
             Console.WriteLine($"An invalid letter grade was input.");
